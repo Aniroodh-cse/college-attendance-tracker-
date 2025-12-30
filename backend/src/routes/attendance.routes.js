@@ -63,7 +63,7 @@ router.post('/mark', async (req, res) => {
 // ✅ Test SMS route
 router.get('/test-sms', async (req, res) => {
   try {
-    await sendSMS('+91XXXXXXXXXX', 'Test message from attendance system');
+    await sendSMS('+91 8610826001', 'Test message from attendance system');
     res.json({ message: 'SMS test sent' });
   } catch (err) {
     res.status(500).json({ message: 'SMS test failed', error: err.message });

@@ -1,7 +1,7 @@
 import api from './axios';
 
 // ✅ Signup API helper
-export const signup = (payload) => api.post('/auth/signup', payload);
+export const signup = (payload) => api.post('/api/auth/signup', payload);
 
 // ✅ Login API helper
-export const login = (payload) => api.post('/auth/login', payload);
+export const login = (payload) => api.post('/api/auth/login', payload);
